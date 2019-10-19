@@ -1,0 +1,14 @@
+================ Training Loss (Sat Oct 19 17:51:15 2019) ================
+(epoch: 1, iters: 5, time: 36.098, data: 0.037) D_A: 2.531 G_A: 2.590 cycle_A: 1.416 idt_A: 0.662 D_B: 2.234 G_B: 2.279 cycle_B: 0.997 idt_B: 0.828 
+(epoch: 1, iters: 10, time: 30.040, data: 0.058) D_A: 0.807 G_A: 0.831 cycle_A: 1.032 idt_A: 0.797 D_B: 0.871 G_B: 0.662 cycle_B: 0.900 idt_B: 0.991 
+(epoch: 1, iters: 15, time: 32.883, data: 0.033) D_A: 0.745 G_A: 0.638 cycle_A: 1.056 idt_A: 1.278 D_B: 0.763 G_B: 0.654 cycle_B: 1.537 idt_B: 1.010 
+(epoch: 1, iters: 20, time: 34.244, data: 0.058) D_A: 0.699 G_A: 0.659 cycle_A: 1.014 idt_A: 1.055 D_B: 0.730 G_B: 0.729 cycle_B: 1.550 idt_B: 0.571 
+(epoch: 1, iters: 25, time: 30.340, data: 0.038) D_A: 0.558 G_A: 0.551 cycle_A: 1.328 idt_A: 0.671 D_B: 0.749 G_B: 0.653 cycle_B: 1.344 idt_B: 0.742 
+(epoch: 1, iters: 30, time: 30.401, data: 0.055) D_A: 1.242 G_A: 1.156 cycle_A: 1.184 idt_A: 0.694 D_B: 0.826 G_B: 0.770 cycle_B: 0.903 idt_B: 0.771 
+================ Training Loss (Sat Oct 19 18:11:03 2019) ================
+(epoch: 1, iters: 5, time: 31.550, data: 0.071) D_A: 1.630 G_A: 1.542 cycle_A: 1.007 idt_A: 1.621 D_B: 1.962 G_B: 2.131 cycle_B: 1.088 idt_B: 1.165 
+(epoch: 1, iters: 10, time: 33.616, data: 0.166) D_A: 0.994 G_A: 1.057 cycle_A: 1.017 idt_A: 1.211 D_B: 0.891 G_B: 0.786 cycle_B: 1.143 idt_B: 1.156 
+(epoch: 1, iters: 15, time: 36.555, data: 0.021) D_A: 0.768 G_A: 0.714 cycle_A: 1.329 idt_A: 0.905 D_B: 0.692 G_B: 0.715 cycle_B: 0.745 idt_B: 0.958 
+(epoch: 1, iters: 20, time: 32.108, data: 0.013) D_A: 0.741 G_A: 0.699 cycle_A: 1.031 idt_A: 1.185 D_B: 0.894 G_B: 1.002 cycle_B: 1.285 idt_B: 1.109 
+(epoch: 1, iters: 25, time: 37.390, data: 0.036) D_A: 0.653 G_A: 0.584 cycle_A: 1.253 idt_A: 0.586 D_B: 0.712 G_B: 0.578 cycle_B: 0.552 idt_B: 1.151 
+(epoch: 1, iters: 30, time: 32.908, data: 0.149) D_A: 0.549 G_A: 0.535 cycle_A: 0.644 idt_A: 1.179 D_B: 0.585 G_B: 0.698 cycle_B: 1.177 idt_B: 0.653 
