@@ -163,14 +163,31 @@ def save_samples(iteration, fixed_Y, fixed_X, G_YtoX, G_XtoY, opts):
     X, fake_X = utils.to_data(fixed_X), utils.to_data(fake_X)
     Y, fake_Y = utils.to_data(fixed_Y), utils.to_data(fake_Y)
 
-    merged = merge_images(X, fake_Y, opts)
-    path = os.path.join(opts.sample_dir, 'sample-{:06d}-X-Y.png'.format(iteration))
-    scipy.misc.imsave(path, merged)
+    path = os.path.join(opts.sample_dir, 'sample-{:06d}'.format(iteration))
+    path_XY = os.path.join(path, 'sample-{:06d}-X-Y'.format(iteration))
+    path_YX = os.path.join(path, 'sample-{:06d}-Y-X'.format(iteration))
+    target_path = os.path.join(path_XY,"target")
+    source_path = os.path.join(path_XY, "source")
+    os.makedirs(target_path)
+    os.makedirs(source_path)
+
+
+    for idx, (s, t) in enumerate(zip(X, fake_Y)):
+        scipy.misc.imsave(source_path,s)
+        scipy.misc.imsave(target_path,t)
+
     print('Saved {}'.format(path))
 
-    merged = merge_images(Y, fake_X, opts)
-    path = os.path.join(opts.sample_dir, 'sample-{:06d}-Y-X.png'.format(iteration))
-    scipy.misc.imsave(path, merged)
+
+    target_path = os.path.join(path_YX, "target")
+    source_path = os.path.join(path_YX, "source")
+
+    os.makedirs(target_path)
+    os.makedirs(source_path)
+
+    for idx, (s, t) in enumerate(zip(Y, fake_X)):
+        scipy.misc.imsave(source_path, s)
+        scipy.misc.imsave(target_path, t)
     print('Saved {}'.format(path))
 
 
