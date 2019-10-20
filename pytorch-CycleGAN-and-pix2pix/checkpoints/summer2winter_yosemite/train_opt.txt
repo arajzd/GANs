@@ -1,8 +1,8 @@
 ----------------- Options ---------------
-               batch_size: 1                             
+               batch_size: 4                             	[default: 1]
                     beta1: 0.5                           
           checkpoints_dir: ./checkpoints                 
-           continue_train: True                          	[default: False]
+           continue_train: False                         
                 crop_size: 256                           
                  dataroot: datasets/summer2winter_yosemite	[default: None]
              dataset_mode: unaligned                     
@@ -42,7 +42,7 @@
               niter_decay: 100                           
                no_dropout: True                          
                   no_flip: False                         
-                  no_html: True                          	[default: False]
+                  no_html: False                         
                      norm: instance                      
               num_threads: 0                             
                 output_nc: 3                             
